@@ -27,22 +27,20 @@
 
 ## Methodology
 
+ <p align="center"> 
+ <img src = "https://raw.githubusercontent.com/NoorBayan/Bohor/main/images/BohorMethodology.png" width = "500px"/>
+ </p>
+ 
 The development of the **Bohor** system involves a systematic approach, broken down into five key steps:
 
 ### Step 1: Extracting Basic Taf'ilat Patterns
 In this phase, we extract the fundamental taf'ilat patterns based on the analysis of six traditional Arabic prosody works considered gold standards. The primary reference used is "القواعد العروضية وأحكام القافية العربية" (The Rules of Prosody and Arabic Rhyme). This work is supplemented by five additional references to extract the core patterns and rules from which sub-patterns will be developed.
 
-![Step 1: Extracting Basic Patterns](path_to_image_step_1)
-
 ### Step 2: Building the Probability Model
 This step involves constructing a probabilistic model to compute possible sub-patterns based on the basic rules identified in Step 1. The core rules are transformed into a probabilistic framework to generate potential taf'ilat patterns for each poetic meter.
 
-![Step 2: Building the Probability Model](path_to_image_step_2)
-
 ### Step 3: Handling Exceptional Cases
 Based on the six traditional prosody works, we study and analyze exceptional cases that fall outside the standard rules, as well as modern poetic deviations. These exceptional cases are integrated into the probability model to ensure comprehensive coverage of all possible patterns.
-
-![Step 3: Handling Exceptional Cases](path_to_image_step_3)
 
 ### Step 4: Processing Rhyme Patterns
 Rhyme patterns are extracted from the final taf'ilat of the poetic line based on specific conditions. Utilizing the six references, we study various Arabic rhyme rules and apply them to the taf'ilat pattern base. For example, the rhyme of a poetic line can be derived from the last consonant in the line to the consonant preceding it, shaping the taf'ilat patterns accordingly.
@@ -51,8 +49,6 @@ Rhyme patterns are extracted from the final taf'ilat of the poetic line based on
 
 ### Step 5: Generating Taf'ilat Patterns
 In this final step, we generate taf'ilat patterns for each poetic meter, ensuring that any poetic line composed adheres to these patterns. This guarantees that the generated patterns align with the established metrical rules.
-
-![Step 5: Generating Taf'ilat Patterns](path_to_image_step_5)
 
 ---
 
