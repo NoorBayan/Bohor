@@ -26,17 +26,9 @@
 
 ## Design Criteria
 
-Poetry blogs play a crucial role in preserving literary heritage and facilitating access to Arabic poetry, enhancing its understanding and appreciation. Designing effective criteria for a poetry blog requires a collaborative effort among experts to define essential characteristics. These design criteria are based on guidelines from the King Salman Center for Arabic Language, emphasizing a structured approach rooted in the nature of the language and the specific poetic texts under study.
+The **Bohor corpus** plays a crucial role in preserving Arabic poetic heritage and facilitating access for analysis and appreciation. Effective design criteria for this corpus were established in collaboration with prosody experts and based on guidelines from the King Salman Center for Arabic Language. Key elements include **metrical feet** (تفعيلات), which are the rhythmic units forming Arabic poetic meters, represented by a coding scheme using "0" for consonants and "1" for vowels to aid computational analysis.
 
-Various methodologies can guide the design of these criteria, tailored to the type and features of the corpus. Researchers have stressed the need to expand these criteria to meet the demands of diverse poetry databases, enhancing their efficacy and ensuring comprehensive coverage of Arabic poetry. In consultation with prosody experts and based on six core references in prosody, effective design criteria for the "Bohor" corpus were established, incorporating several foundational elements.
-
-These criteria include **metrical feet** (تفعيلات), the fundamental rhythmic units in Arabic poetry, composed of specific combinations of long and short syllables that follow a set pattern to form a "poetic meter." Metrical feet can be seen as musical rhythms, giving each poem its distinct melody, with ten primary feet forming the backbone of Arabic verse.
-
-The criteria also define a coding scheme for metrical feet, using "0" for consonants and "1" for vowels to facilitate computational analysis. Additionally, the criteria cover **zihafat** (metrical substitutions) and **illa** (metrical modifications), which alter the basic metrical patterns to create new variations, essential for a comprehensive analysis of Arabic prosody and meter transformation.
-
-Other criteria include **watad** (anchors), **asbab** (causes), and **fasil** (separators), the core components of metrical feet that shape the rhythmic structure of poetic lines. Analyzing these elements enhances poets' understanding of their rhythmic compositions, contributing to text precision and quality.
-
-**Rhyme** is another key element, setting the rhythm pattern and linking lines together. It consists of the letters and diacritics before the pause at the end of each line. The criteria also include rhyme letters and imperfections, identifying patterns like **rawi** (refrain), **wasl** (link), **khuruj** (outset), **radf** (support), **ta'sis** (foundation), and **dakhil** (interior). These aspects ensure text coherence by examining rhyme consistency.
+The criteria also cover **metrical substitutions** (زحافات) and **metrical modifications** (علل), as well as components such as **anchors** (أوتاد), **causes** (أسباب), and **separators** (فواصل), which form the rhythmic structure of poetic lines. Additionally, **rhyme structure** is examined through elements like **refrain** (روي), **support** (ردف), and **interior rhyme** (دخيل) to ensure cohesion and consistency in the poetic rhythm.
 
 <p align="center"> 
  <img src = "https://raw.githubusercontent.com/NoorBayan/Bohor/main/images/BhoorCriteria.png" width = "800px"/>
