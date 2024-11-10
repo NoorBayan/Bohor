@@ -1,8 +1,8 @@
 # Bohor: A System for Extracting Arabic Poetic Metrical Patterns
 
- <p align="center"> 
+<p align="center"> 
  <img src = "https://raw.githubusercontent.com/NoorBayan/Bohor/main/images/BohorLogo.png" width = "200px"/>
- </p>
+</p>
 
 ## Summary
 **Bohor** is an advanced system designed for extracting and analyzing metrical patterns (taf'ilat) in classical Arabic poetry. By leveraging traditional works and advanced probabilistic modeling, Bohor provides a robust framework for understanding and generating poetic structures. This README outlines the development methodology, usage instructions, and contributions.
@@ -11,42 +11,60 @@
 
 ## Table of Contents
 1. [Summary](#summary)
-2. [Methodology](#methodology)
-   - [Step 1: Extracting Basic Taf'ilat Patterns](#step-1-extracting-basic-tafilat-patterns)
-   - [Step 2: Building the Probability Model](#step-2-building-the-probability-model)
-   - [Step 3: Handling Exceptional Cases](#step-3-handling-exceptional-cases)
-   - [Step 4: Processing Rhyme Patterns](#step-4-processing-rhyme-patterns)
-   - [Step 5: Generating Taf'ilat Patterns](#step-5-generating-tafilat-patterns)
-3. [Use Cases for Bohor](#use-cases-for-Bohor)
-4. [How to Use Bohor](#how-to-use-Bohor)
-5. [Future Work](#future-work)
-6. [Contributing](#contributing)
-7. [License](#license)
+2. [Design Criteria](#design-criteria)
+3. [Methodology](#methodology)
+   - [1. Extraction and Organization of Prosodic Rules](#1-extraction-and-organization-of-prosodic-rules)
+   - [2. Building a Mathematical Model for Pattern Generation](#2-building-a-mathematical-model-for-pattern-generation)
+   - [3. Evaluation and Validation](#3-evaluation-and-validation)
+4. [Use Cases for Bohor](#use-cases-for-bohor)
+5. [How to Use Bohor](#how-to-use-bohor)
+6. [Future Work](#future-work)
+7. [Contributing](#contributing)
+8. [License](#license)
 
 ---
 
+## Design Criteria
+
+Poetry blogs play a crucial role in preserving literary heritage and facilitating access to Arabic poetry, enhancing its understanding and appreciation. Designing effective criteria for a poetry blog requires a collaborative effort among experts to define essential characteristics. These design criteria are based on guidelines from the King Salman Center for Arabic Language, emphasizing a structured approach rooted in the nature of the language and the specific poetic texts under study.
+
+Various methodologies can guide the design of these criteria, tailored to the type and features of the corpus. Researchers have stressed the need to expand these criteria to meet the demands of diverse poetry databases, enhancing their efficacy and ensuring comprehensive coverage of Arabic poetry. In consultation with prosody experts and based on six core references in prosody, effective design criteria for the "Bohor" corpus were established, incorporating several foundational elements.
+
+These criteria include **metrical feet** (تفعيلات), the fundamental rhythmic units in Arabic poetry, composed of specific combinations of long and short syllables that follow a set pattern to form a "poetic meter." Metrical feet can be seen as musical rhythms, giving each poem its distinct melody, with ten primary feet forming the backbone of Arabic verse.
+
+The criteria also define a coding scheme for metrical feet, using "0" for consonants and "1" for vowels to facilitate computational analysis. Additionally, the criteria cover **zihafat** (metrical substitutions) and **illa** (metrical modifications), which alter the basic metrical patterns to create new variations, essential for a comprehensive analysis of Arabic prosody and meter transformation.
+
+Other criteria include **watad** (anchors), **asbab** (causes), and **fasil** (separators), the core components of metrical feet that shape the rhythmic structure of poetic lines. Analyzing these elements enhances poets' understanding of their rhythmic compositions, contributing to text precision and quality.
+
+**Rhyme** is another key element, setting the rhythm pattern and linking lines together. It consists of the letters and diacritics before the pause at the end of each line. The criteria also include rhyme letters and imperfections, identifying patterns like **rawi** (refrain), **wasl** (link), **khuruj** (outset), **radf** (support), **ta'sis** (foundation), and **dakhil** (interior). These aspects ensure text coherence by examining rhyme consistency.
+
+<p align="center"> 
+ <img src = "https://raw.githubusercontent.com/NoorBayan/Bohor/main/images/BhoorCriteria.png" width = "800px"/>
+</p>
+
+---
+
+
+
+
 ## Methodology
 
+The development of the "Bohor" Prosodic Patterns Corpus for classical Arabic poetry follows a comprehensive methodology based on King Salman Center for Arabic Language standards. This methodology involves three primary stages to ensure accurate prosodic pattern analysis and generation.
+
  <p align="center"> 
- <img src = "https://raw.githubusercontent.com/NoorBayan/Bohor/main/images/bhoor_methodology.png" width = "500px"/>
+ <img src = "https://raw.githubusercontent.com/NoorBayan/Bohor/main/images/bhoor_methodology.png" width = "800px"/>
  </p>
- 
-The development of the **Bohor** system involves a systematic approach, broken down into five key steps:
 
-### Step 1: Extracting Basic Taf'ilat Patterns
-In this phase, we extract the fundamental taf'ilat patterns based on the analysis of six traditional Arabic prosody works considered gold standards. The primary reference used is "القواعد العروضية وأحكام القافية العربية" (The Rules of Prosody and Arabic Rhyme). This work is supplemented by five additional references to extract the core patterns and rules from which sub-patterns will be developed.
+### 1. Extraction and Organization of Prosodic Rules
+The initial phase involves extracting prosodic rules for each poetic meter, including unique variations and exceptions. Based on six key references in Arabic prosody, this phase organizes rules into structured tables for efficient processing. The data includes essential details such as metrical feet patterns, caesura rules, and potential variations, creating a detailed base for computational analysis.
 
-### Step 2: Building the Probability Model
-This step involves constructing a probabilistic model to compute possible sub-patterns based on the basic rules identified in Step 1. The core rules are transformed into a probabilistic framework to generate potential taf'ilat patterns for each poetic meter.
+### 2. Building a Mathematical Model for Pattern Generation
+This phase converts the extracted prosodic rules into a mathematical model capable of generating all possible rhythmic patterns for each poetic meter, accommodating unique variations and exceptions. Built in Python, the model uses decision tables for accurate prosodic representations and supports educational and analytical applications. The model is open source and can be used to analyze and interpret Arabic poetic forms in automated systems.
 
-### Step 3: Handling Exceptional Cases
-Based on the six traditional prosody works, we study and analyze exceptional cases that fall outside the standard rules, as well as modern poetic deviations. These exceptional cases are integrated into the probability model to ensure comprehensive coverage of all possible patterns.
+### 3. Evaluation and Validation
+The final phase involves rigorous validation of the corpus by prosody experts to confirm accuracy. Computational tools are used to verify the model’s adherence to established prosodic rules, ensuring high-quality outputs. Extensive tests are conducted to confirm the corpus's accuracy in representing Arabic poetic weights and variations, establishing the corpus as a reliable tool for research and computational analysis.
 
-### Step 4: Processing Rhyme Patterns
-Rhyme patterns are extracted from the final taf'ilat of the poetic line based on specific conditions. Utilizing the six references, we study various Arabic rhyme rules and apply them to the taf'ilat pattern base. For example, the rhyme of a poetic line can be derived from the last consonant in the line to the consonant preceding it, shaping the taf'ilat patterns accordingly.
-
-### Step 5: Generating Taf'ilat Patterns
-In this final step, we generate taf'ilat patterns for each poetic meter, ensuring that any poetic line composed adheres to these patterns. This guarantees that the generated patterns align with the established metrical rules.
+This methodology ensures that the "Bohor" corpus serves as a comprehensive and precise resource for Arabic poetry analysis, supporting advanced research and computational applications.
 
 ---
 
