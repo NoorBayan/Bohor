@@ -28,7 +28,7 @@
 ## Methodology
 
  <p align="center"> 
- <img src = "https://raw.githubusercontent.com/NoorBayan/Bohor/main/images/BohorMethodology.png" width = "500px"/>
+ <img src = "https://raw.githubusercontent.com/NoorBayan/Bohor/main/images/bhoor_methodology.png" width = "500px"/>
  </p>
  
 The development of the **Bohor** system involves a systematic approach, broken down into five key steps:
