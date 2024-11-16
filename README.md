@@ -11,13 +11,13 @@
 
 ## Table of Contents
 1. [Summary](#summary)
+4. [Use Cases for Bohor](#use-cases-for-bohor)
 5. [How to Use Bohor](#how-to-use-bohor)
 6. [Future Work](#future-work)
 7. [Contributing](#contributing)
 8. [License](#license)
 
 ---
-
 
 ## Use Cases for Bohor
 
