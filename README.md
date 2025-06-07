@@ -5,7 +5,7 @@
 </p>
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.YOUR_ACTUAL_DOI.svg)](https://doi.org/10.5281/zenodo.YOUR_ACTUAL_DOI) <!-- Replace YOUR_ACTUAL_DOI with your Zenodo DOI -->
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.YOUR_ACTUAL_DOI.svg)](https://doi.org/10.5281/zenodo.15615402) 
 <!-- Add other badges if relevant, e.g., for an arXiv preprint if you have one -->
 
 Welcome to the **Bohor (بُحُور)** corpus project! Bohor is a meticulously crafted, machine-readable dataset designed to capture the rich and intricate system of classical Arabic poetry's meters (known as *buḥūr*). This resource aims to empower researchers, linguists, and developers in the fields of computational linguistics, digital humanities, and Arabic literature studies.
