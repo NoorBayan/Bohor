@@ -1,4 +1,4 @@
-# Bohor: A Comprehensive Corpus of Classical Arabic Prosody
+# Bohor: A Prosodic Corpus of Arabic Meters and Rhythmic Variants
 
 <p align="center"> 
  <img src = "https://raw.githubusercontent.com/NoorBayan/Bohor/main/images/BohorLogo.png" width = "200px"/>
