@@ -179,7 +179,7 @@ This notebook provides access to a large-scale dataset of **over 30,000 classica
 [![Open in Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1D5XsvnXQoIcWc53ef1EcH6A6uwYFe2Pr?usp=sharing)
 
  <p align="center">
-   <img src = "https://raw.githubusercontent.com/NoorBayan/Awzan/main/images/AwzanColab.png" width = "800px"/>
+   <img src = "https://raw.githubusercontent.com/NoorBayan/Awzan/main/images/AwzanColab.png" width = "1000px"/>
  </p>
 
 ---
