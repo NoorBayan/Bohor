@@ -1,0 +1,18 @@
+numpy>=1.22.0
+scipy>=1.8.0
+pandas>=1.4.0
+
+# Configuration management
+PyYAML>=6.0
+
+# Data visualization & paper figures reproduction (Figure 7 & Figure 8)
+matplotlib>=3.5.0
+seaborn>=0.11.0
+
+# Terminal formatting and progress tracking for large-scale batches (37K / 1M verses)
+tqdm>=4.64.0
+tabulate>=0.8.9
+
+# Testing framework and test runner
+pytest>=7.0.0
+pytest-cov>=3.0.0
