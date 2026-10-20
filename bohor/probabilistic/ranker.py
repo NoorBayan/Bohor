@@ -94,7 +94,7 @@ class ProbabilisticRanker:
         )
 
         # Algorithm 2, Phase 4: Temperature-Scaled Softmax Calibration
-        raw_scores = [c.raw_score for c in candidate_list]
+        raw_scores = [10.0 * c.raw_score for c in candidate_list]
         calibrated_probs = self.calibrator.softmax(raw_scores)
 
         for idx, prob in enumerate(calibrated_probs):
